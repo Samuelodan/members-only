@@ -4,7 +4,8 @@
   <% @posts.each do |post| %>
     <li>
       <div>
-        <%= link_to post.title, post %>
+        <%#= link_to post.title, post %>
+        <p>Post title: <%= post.title %></p>
       </div>
 
       <% if user_signed_in? %>

@@ -10,7 +10,7 @@
 
       <% if user_signed_in? %>
         <div>
-          <p>Post author: <%= User.find(post.User_id).username %></p>
+          <p>Post author: <%= User.find(post.User_id).email %></p>
         </div>
       <% end %>
     </li>

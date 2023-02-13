@@ -6,6 +6,12 @@
       <div>
         <%= link_to post.title, post %>
       </div>
+
+      <% if user_signed_in? %>
+        <div>
+          <p>Post author: <%= User.find(post.User_id).username %></p>
+        </div>
+      <% end %>
     </li>
   <% end %>
 </ul>
